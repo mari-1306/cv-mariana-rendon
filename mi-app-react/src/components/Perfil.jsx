@@ -1,4 +1,4 @@
-export const Perfil = () => {
+export default function Perfil() {
   return (
     <section>
       <h2>Perfil Profesional</h2>
@@ -19,4 +19,3 @@ export const Perfil = () => {
   );
 };
 
-export default Perfil;

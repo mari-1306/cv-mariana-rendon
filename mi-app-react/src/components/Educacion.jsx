@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Educacion = () => {
+export default function Educacion() {
   return (
     <section>
       <h2>Formación Académica</h2>
@@ -22,4 +20,3 @@ const Educacion = () => {
   );
 };
 
-export default Educacion;
