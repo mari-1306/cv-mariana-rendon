@@ -1,25 +1,30 @@
 export default function Experiencia() {
+  const experiencia = [
+    { id: 1, puesto: "Desarrollador Full Stack", empresa: "Navisoft Gaming", periodo: "2022-2024" },
+    { id: 2, puesto: "Instructor TIC", empresa: "SENA", periodo: "2020-2022" }
+  ];
+
+  
+  if (experiencia.length === 0) {
+    return (
+      <section>
+        <h3>Experiencia Profesional</h3>
+        <p>Diseño e implementación de interfaces web responsivas utilizando React y CSS moderno.</p>
+      </section>
+    );
+  }
+
   return (
     <section>
       <h3>Experiencia Profesional</h3>
       <ul>
-        <li>
-          <strong>Desarrollador Full Stack</strong> - Navisoft Gaming (2021-2025)<br />
-          Diseñé y desarrollé plataformas de videojuegos en línea, integrando frontend con backend y APIs de pago.
-        </li>
-        <li>
-          <strong>Instructor TIC</strong> - SENA (2020-2023)<br />
-          Enseñé programación web, bases de datos y metodologías ágiles a aprendices en formación técnica.
-        </li>
-        <li>
-          <strong>Soporte Técnico</strong> - Claro Colombia (2019-2020)<br />
-          Instalé servicios de internet y resolví incidencias técnicas para usuarios residenciales y empresariales.
-        </li>
-        <li>
-          <strong>Desarrollador Freelance</strong> - Proyecto de gestión académica (2021)<br />
-          Creé un sistema web para la gestión de calificaciones y asistencia escolar utilizando React y Firebase.
-        </li>
+        {experiencia.map((exp) => (
+          <li key={exp.id}>
+            <strong>{exp.puesto}</strong> - {exp.empresa} ({exp.periodo})
+          </li>
+        ))}
       </ul>
     </section>
   );
 }
+
