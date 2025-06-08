@@ -1,4 +1,4 @@
-export default function Perfil() {
+export default function Perfil({texto}) {
   return (
     <section>
       <h2>Perfil Profesional</h2>

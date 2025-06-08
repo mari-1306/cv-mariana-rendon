@@ -1,4 +1,4 @@
-export default function Experiencia() {
+export default function Experiencia({trabajos}) {
   const experiencia = [
     { id: 1, puesto: "Desarrollador Full Stack", empresa: "Navisoft Gaming", periodo: "2022-2024" },
     { id: 2, puesto: "Instructor TIC", empresa: "SENA", periodo: "2020-2022" }

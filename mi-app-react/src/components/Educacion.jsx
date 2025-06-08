@@ -1,4 +1,4 @@
-export default function Educacion() {
+export default function Educacion({ estudios }) {
   const educacion = [
     { id: 1, titulo: "Ingeniería en Sistemas", universidad: "Universidad Nacional", periodo: "2020-2024" }
   ];

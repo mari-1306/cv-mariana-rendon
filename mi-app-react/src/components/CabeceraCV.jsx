@@ -1,5 +1,5 @@
   
-export default function CabeceraCV(){
+export default function CabeceraCV({nombre,profecion}){
   return (
     <header>
       <h1>Mariana Rendon Montoya</h1>
@@ -10,3 +10,4 @@ export default function CabeceraCV(){
     </header>
   );
   }
+  
