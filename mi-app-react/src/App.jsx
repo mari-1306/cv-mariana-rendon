@@ -18,4 +18,9 @@ function App() {
   );
 }
 
-export default App;
+const [tecnologias, setTecnologias] = useState(cvData.tecnologias);
+
+const agregarTecnologia = (tecno) => {
+  setTecnologias([...tecnologias, tecno]);
+};
+export default App
